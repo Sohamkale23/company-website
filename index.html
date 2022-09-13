@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Mexant - Financial HTML5 Template</title>
+    <title>Shhayura Engineers</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,13 +21,16 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-<!--
 
-TemplateMo 574 Mexant
-
-https://templatemo.com/tm-574-mexant
-
--->
+    <style>
+      ::placeholder{
+        color: white;
+        font-size: 16px;
+      }
+      input{
+        background-color: red;
+      }
+    </style>
   </head>
 
 <body>
@@ -57,8 +60,8 @@ https://templatemo.com/tm-574-mexant
                                   <li><a href="contact-us.html">Contact Us</a></li>
                               </ul>
                           </li> -->
-                          <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
-                          <li><a href="contact-us.html">Contact Support</a></li> 
+                          <!-- <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li> -->
+                          <li><a href="#contactus">Contact Support</a></li> 
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -88,7 +91,7 @@ https://templatemo.com/tm-574-mexant
                       <a href="#">Discover More</a>
                     </div>
                     <div class="orange-button">
-                      <a href="#">Contact Us</a>
+                      <a href="#contactus">Contact Us</a>
                     </div>
                   </div>
                 </div>
@@ -368,7 +371,7 @@ https://templatemo.com/tm-574-mexant
     </div>
   </section>
 
-  <section class="calculator">
+  <section id="contactus" class="calculator">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
@@ -377,43 +380,49 @@ https://templatemo.com/tm-574-mexant
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>Your Requirement</h6>
+          <div  class="section-heading">
+            <h6>Contact Us</h6>
             <h4>Get a Quotation</h4>
           </div>
-          <form id="calculate" action="" method="get">
+          <form id="calculate" action="https://formcarry.com/s/jTYaBSsSN" method="POST" accept-charset="UTF-8">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="name">Your Name</label>
-                  <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+                  <!-- <label for="name">Your Name</label> -->
+                  <input style="padding-left: 0.75rem; font-size: 10px;" type="name" name="name" id="name" placeholder="Your Name" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="email">Your Email</label>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+                  <!-- <label for="email">Your Email</label> -->
+                  <input style="padding-left: 0.75rem; font-size: 10px;" type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <label for="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on" >
+                  <!-- <label for="subject">Subject</label> -->
+                  <input style="padding-left: 0.75rem; font-size: 10px;" type="number" name="phone" id="phone" placeholder="Your Phone Number" autocomplete="on" >
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <label for="chooseOption" class="form-label">Your Enquiry</label>
+                  <!-- <label for="chooseOption" class="form-label">Your Enquiry</label> -->
                   <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
                       <option selected>Choose an Option</option>
-                      <option type="checkbox" name="option1" value="Online Banking">Electric Wiring</option>
-                      <option value="Financial Control">Transformer installation</option>
-                      <option value="Yearly Profit">HT/LT line erection</option>
-                      <option value="Crypto Investment">Panel Installation</option>
-                  </select>
+                      <option type="checkbox" name="option1" value="Electric Wiring">Electric Wiring</option>
+                      <option value="Transformer installation">Transformer installation</option>
+                      <option value="HT/LT line erection">HT/LT line erection</option>
+                      <option value="Panel Installation">Panel Installation</option>
+                      <option value="EV Charging Station">EV Charging Station</option>
+                    </select>
               </fieldset>
               </div>
-              <div class="col-lg-12">
+              <div  class="col-lg-12">
+                <fieldset >
+                  <textarea style="background-color: rgba(121,134,151, 0.7); border: none;" class="form-select" name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div style="margin-top:1.75rem" class="col-lg-12">
                 <fieldset>
                   <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
                 </fieldset>
@@ -510,9 +519,7 @@ https://templatemo.com/tm-574-mexant
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
-          
-          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+          <p>Copyright © 2022 Shhayura Engineers. All Rights Reserved.</p>
         </div>
       </div>
     </div>
